@@ -205,7 +205,7 @@ add_to_config() {
 
 # 添加Gaussian环境变量
 add_to_config "export g16root=\"$install_dir\"" "$SHELL_CONFIG" #install_dir为g16文件的上级上级目录
-add_to_config "export GAUSS_SCRDIR=\"$HOME/gaussian_scratch\"" "$SHELL_CONFIG"
+add_to_config "export GAUSS_SCRDIR=$HOME/gaussian_scratch" "$SHELL_CONFIG"
 add_to_config "source $g16_path/bsd/g16.profile" "$SHELL_CONFIG" #g16_dir 为g16文件的上级目录
 
 
